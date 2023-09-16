@@ -1,3 +1,12 @@
+# Define arguments and environment variables
+ARG NGROK_TOKEN
+ARG Password
+ENV Password=${Password}
+ENV NGROK_TOKEN=${NGROK_TOKEN}
+
+# Expose port
+EXPOSE 80 8888 8080 443 5130 5131 5132 5133 5134 5135 3306 22 5454 7100 7200 7300 7400 5000 53
+
 # syntax=docker/dockerfile:1
 
 ARG GO_VERSION=1.20.8
